@@ -7,17 +7,35 @@
 </head>
 <body>
   <div class="formContainer">
-        <input type="email" id="InputEmail" placeholder="jane.doe@example.com">
-        <input type="text" id="InputPassword" placeholder="Jane Doe">
-       <button id="signIn" type="submit" class="btn btn-action">Sign In</button>
-       <button id="signUp" type="submit" class="btn btn-secondary">Sign Up</button>
-       <button id="logOut" type="submit" class="btn btn-action hide">Log Out</button>
+    <div>
+      <input type="email" id="InputEmail" placeholder="jane.doe@example.com">
+      <input type="text" id="InputPassword" placeholder="Jane Doe">
+    </div>
+    <div class="initButtons">
+      <button id="signIn" type="submit" class="btn btn-action btn-info">Sign In</button>
+      <button id="signUp" type="submit" class="btn btn-secondary btn-success">Sign Up</button>
+      <button id="logOut" type="submit" class="btn btn-action hide btn-warning" >Log Out</button>
+    </div>
   </div>
   <div id="addFormContainer" class="hide">
+    <div class="">
+      <h4>Additional Information</h4>  
+      <div class="form-group">
+        <label for="age">Age:</label>
         <input type="number" id="age" placeholder="25">
+      </div>
+      <div class="form-group">
+        <label for="petName">Pet Name:</label>
         <input type="text" id="petName" placeholder="Janes Dog">
-        <input type="textarea" id="notes" placeholder="Additional Notes">
-       <button id="addInfo" type="submit" class="btn btn-action">Add Info</button>
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea type="textarea" id="notes" rows="5" placeholder="Additional Notes"></textarea>
+      </div>
+    </div>
+      <div class="addButtons">
+        <button id="addInfo" type="submit" class="btn btn-action btn-success">Add User Info</button>
+      </div>
   </div>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
